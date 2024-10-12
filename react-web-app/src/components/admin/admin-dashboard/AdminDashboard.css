@@ -1,0 +1,89 @@
+.admin-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px; 
+}
+
+.admin-profile-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px; 
+    margin-bottom: 40px; 
+}
+
+.admin-profile-section {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px; 
+    width: 100%;
+}
+
+.admin-profile-image {
+    width: 250px; 
+    height: 250px;
+    border-radius: 50%;
+    margin-right: 40px; /
+}
+
+.admin-profile-info h2 {
+    font-size: 2.4rem; 
+    color: #343a40;
+}
+
+.admin-profile-info p {
+    font-size: 1.2rem; 
+    color: #6c757d;
+}
+
+.admin-card-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+
+.admin-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.admin-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.admin-button {
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.admin-button:hover {
+    background-color: #e6b800;
+}
+
+.admin-card-content {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+

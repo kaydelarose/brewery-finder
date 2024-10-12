@@ -1,0 +1,93 @@
+.brewer-profile-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.brewer-profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.container-owned {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.brewer-breweries-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.brewery-card {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.brewery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.brewer-edit-button {
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #aeaeae;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.brewer-edit-button:hover {
+    background-color: #f8c90a;
+}
+
+.brewer-button-add {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.brewer-button-add:hover {
+    background-color: #0056b3;
+}
+
+.brewer-img{
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+.brewer-dash-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9; 
+}

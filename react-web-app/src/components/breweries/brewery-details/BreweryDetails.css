@@ -1,0 +1,71 @@
+/* BreweryDetails.css */
+.brewery-details-container {
+    width: 100%;
+    max-width: 1500px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    color: #6a6a6a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.brewery-page-container {
+    padding: 20px;
+}
+
+.back-button {
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    background-color: #e6b800;
+}
+
+.reviews-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.review-card {
+    background-color: #f6f6f6;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.carousel .control-arrow, 
+.carousel .control-prev.control-arrow:before, 
+.carousel .control-next.control-arrow:before {
+    color: #ffcc00;
+}
+
+.carousel .carousel-status {
+    display: none; 
+}
+
+.review-card p {
+    margin: 5px 0;
+    color: rgb(97, 97, 97);
+}
+
+.brewery-details-container a {
+    color: #ffcc00;
+}
+
+.brewery-details-container a:hover {
+    color: #ffd633;
+}
+
+.beer-line-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}

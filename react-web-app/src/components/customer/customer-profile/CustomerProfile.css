@@ -1,0 +1,121 @@
+.profile-page {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;      
+    padding: 20px;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+.profile-container {
+    display: flex;  
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+}
+
+.profile-image-container {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.customer-username {
+    text-align: center;    
+    margin-bottom: 10px;  
+    font-weight: bold;
+}
+
+.profile-details {
+    flex-grow: 1;
+    margin-top: 40px;
+}
+
+.profile-details p {
+    margin: 10px 0;
+}
+
+.profile-details .customer-edit-btn {
+    margin-top: 10px;
+}
+
+.customer-edit-btn {
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.customer-edit-btn:hover {
+    background-color: #e6b800;
+}
+
+.reviews-container ul {
+    list-style-type: none;
+}
+
+.reviews-container {
+    width: 100%;
+    max-width: 1000px;      
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 0; 
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.date {
+    font-size: 0.9rem; 
+    color: #777; 
+    margin-right: 30px;
+}
+
+.location {
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    color: rgb(98, 98, 98)
+}
+
+.location svg {
+    position: relative;
+    transform: translateY(-2px);
+    margin-right: 5px;
+}
+
+.indented-text {
+    text-indent: 20px; 
+}
+
