@@ -115,7 +115,6 @@ public class MySqlCustomerDao implements CustomerDao
                 VALUES(?, ?, ?)
                 """;
 
-        // insert a new record and retrieve the generated id
         KeyHolder keyHolder = new GeneratedKeyHolder();
 
         jdbcTemplate.update(connection -> {

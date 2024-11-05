@@ -45,7 +45,6 @@ public class CustomerReviewController {
         catch(Exception e)
         {
             logger.logMessage(e.getMessage());
-
             var error = new HttpError(HttpStatus.INTERNAL_SERVER_ERROR.value(), HttpStatus.INTERNAL_SERVER_ERROR.toString(), "Oops, something went wrong!");
 
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
@@ -91,7 +90,6 @@ public class CustomerReviewController {
                 return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
 
             }
-
             customerReviewsDao.updateCustomerReview(id, customerReviews);
             return ResponseEntity.noContent().build();
         }
@@ -106,7 +104,6 @@ public class CustomerReviewController {
     @DeleteMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteCustomerReview(@PathVariable int id) { customerReviewsDao.deleteCustomerReview(id); }
-
 
 }
 

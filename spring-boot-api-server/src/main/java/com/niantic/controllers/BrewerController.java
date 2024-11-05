@@ -32,9 +32,7 @@ public class BrewerController
         try
         {
             List<Brewer> brewers = brewerDao.getAll();
-
             return ResponseEntity.ok(brewers);
-
         }
         catch (Exception e) {
             logger.logMessage(e.getMessage());
@@ -86,12 +84,10 @@ public class BrewerController
             }
         }
 
-
             @DeleteMapping("{id}")
             @ResponseStatus(HttpStatus.NO_CONTENT)
             public void deleteBrewer ( @PathVariable int id){
             brewerDao.deleteBrewer(id);
-
 
         }
 

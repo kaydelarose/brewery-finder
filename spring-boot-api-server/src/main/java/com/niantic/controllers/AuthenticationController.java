@@ -36,8 +36,6 @@ public class AuthenticationController
 {
     private final AuthenticationService authenticationService;
 
-
-
     @Autowired
     public AuthenticationController(AuthenticationService authenticationService)
     {
@@ -50,7 +48,6 @@ public class AuthenticationController
         try
         {
             var response = authenticationService.login(loginDto);
-
             HttpHeaders httpHeaders = new HttpHeaders();
             httpHeaders.add("Authorization", "Bearer " + response.getToken());
 
@@ -77,7 +74,6 @@ public class AuthenticationController
         try
         {
             var user = authenticationService.register(newUser);
-
             return ResponseEntity.status(HttpStatus.CREATED).body(user);
         }
         catch(DuplicateResourceException e)

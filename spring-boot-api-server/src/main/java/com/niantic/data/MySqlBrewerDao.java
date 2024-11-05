@@ -23,7 +23,6 @@ public class MySqlBrewerDao implements BrewerDao {
         jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
-
     @Override
     public List<Brewer> getAll() {
         List<Brewer> brewers = new ArrayList<>();

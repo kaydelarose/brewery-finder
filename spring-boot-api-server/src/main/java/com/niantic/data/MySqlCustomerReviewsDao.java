@@ -100,8 +100,6 @@ public class MySqlCustomerReviewsDao implements CustomerReviewsDao {
         return review;
     }
 
-
-
     @Override
     public List<CustomerReviews> getReviewByCustomerId(int id) {
 

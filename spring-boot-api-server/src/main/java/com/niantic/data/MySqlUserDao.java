@@ -26,14 +26,12 @@ public class MySqlUserDao implements UserDao
         jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
-
     @Override
     public User create(User newUser)
     {
         String sql = "INSERT INTO users (username, hashed_password, user_role) VALUES (?, ?, ?)";
         String hashedPassword = new BCryptPasswordEncoder().encode(newUser.getPassword());
 
-        // insert a new record and retrieve the generated id
         KeyHolder keyHolder = new GeneratedKeyHolder();
 
         jdbcTemplate.update(connection -> {
@@ -45,11 +43,9 @@ public class MySqlUserDao implements UserDao
 
             return statement;
         }, keyHolder);
-
         int newId = keyHolder.getKey().intValue();
 
         return getUserById(newId);
-
     }
 
     @Override

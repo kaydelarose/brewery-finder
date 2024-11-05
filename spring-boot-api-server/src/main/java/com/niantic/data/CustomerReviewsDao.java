@@ -19,6 +19,4 @@ public interface CustomerReviewsDao {
     void updateCustomerReview(int id, CustomerReviews customerReviews);
 
     void deleteCustomerReview(int id);
-
-
 }

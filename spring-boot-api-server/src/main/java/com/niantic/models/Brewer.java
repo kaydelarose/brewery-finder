@@ -14,5 +14,4 @@ public class Brewer {
     private int breweriesOwned;
     private int userId;
 
-
 }

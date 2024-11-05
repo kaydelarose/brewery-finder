@@ -43,7 +43,7 @@ public class LoggingService
         }
         catch(Exception e)
         {
-            //swallow
+            
         }
     }
 }

@@ -33,15 +33,15 @@ public class SecurityConfig
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception
     {
 
-        http.csrf(AbstractHttpConfigurer::disable) // New syntax for disabling CSRF
+        http.csrf(AbstractHttpConfigurer::disable)
             .authorizeHttpRequests(authorize -> authorize
                     .requestMatchers("/**")
-                    .permitAll() // Permit access to the authentication endpoint
+                    .permitAll()
                     .anyRequest()
                     .authenticated()
             )
             .sessionManagement(session -> session
-                    .sessionCreationPolicy(SessionCreationPolicy.STATELESS) // Ensure stateless sessions
+                    .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             );
 
         return http.build();

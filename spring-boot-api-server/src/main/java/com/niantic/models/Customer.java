@@ -17,5 +17,4 @@ public class Customer {
     private int totalReviews;
     private int userId;
 
-
 }

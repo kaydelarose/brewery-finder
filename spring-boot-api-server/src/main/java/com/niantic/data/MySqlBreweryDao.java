@@ -50,9 +50,7 @@ public class MySqlBreweryDao implements BreweryDao {
             String webSiteUrl = row.getString("website_url");
             int brewerId = row.getInt("brewer_id");
 
-
             Brewery brewery = new Brewery(breweryId, breweryName, breweryType, address, city, stateProvince, postalCode, country, longitude, latitude, phone, webSiteUrl, brewerId);
-
 
             breweries.add(brewery);
         }

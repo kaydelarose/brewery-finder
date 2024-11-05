@@ -24,7 +24,6 @@ import org.springframework.web.server.ResponseStatusException;
 @Service
 public class JwtAuthenticationService implements AuthenticationService
 {
-
     private final AuthenticationManager authenticationManager;
     private final UserDetailsService userDetailsService;
     private final JwtUtil jwtUtil;
@@ -73,7 +72,6 @@ public class JwtAuthenticationService implements AuthenticationService
         {
             throw new DuplicateResourceException(registerUserDto.getUsername() + " already exists");
         }
-        // create user
         return userDao.create(new User(0, registerUserDto.getUsername(), registerUserDto.getPassword(), registerUserDto.getRole()));
     }
 }

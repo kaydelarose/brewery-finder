@@ -40,13 +40,11 @@ public class CustomerController
         try
         {
             var customers = customerDao.getCustomers();
-
             return ResponseEntity.ok(customers);
         }
         catch (Exception e)
         {
             logger.logMessage(e.getMessage());
-
             var error = new HttpError(HttpStatus.INTERNAL_SERVER_ERROR.value(),HttpStatus.INTERNAL_SERVER_ERROR.toString(), "Oops, something went wrong!");
 
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
@@ -68,7 +66,6 @@ public class CustomerController
                 return ResponseEntity.status(HttpStatus.NOT_FOUND)
                                      .body(error);
             }
-
             return ResponseEntity.ok(customer);
         }
         catch(Exception e)
@@ -92,7 +89,7 @@ public class CustomerController
     @GetMapping("/reviews")
     @PreAuthorize("isAuthenticated()")
     public ResponseEntity<CustomerReviewsResponse> getCurrentCustomerReviews(Principal principal) {
-        // Use the service to fetch reviews and username
+
         int userId = userDao.getIdByUsername(principal.getName());
         var customer = customerDao.getCustomerByUserId(userId);
         CustomerReviewsResponse response = customerReviewService.getCustomerReviews(customer.getCustomerId());
@@ -133,7 +130,6 @@ public class CustomerController
         catch (Exception e)
         {
             var error = new HttpError(HttpStatus.INTERNAL_SERVER_ERROR.value(), HttpStatus.INTERNAL_SERVER_ERROR.toString(), "Oops, something went wrong!");
-
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(error);
         }

@@ -1,0 +1,6 @@
+2024-10-24 20:19:40 StatementCallback; uncategorized SQLException for SQL [SELECT *
+FROM Brewery
+]; SQL state [3D000]; error code [1046]; No database selected
+2024-10-24 20:19:50 StatementCallback; uncategorized SQLException for SQL [SELECT *
+FROM Brewery
+]; SQL state [3D000]; error code [1046]; No database selected

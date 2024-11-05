@@ -35,7 +35,6 @@ public class CustomerReviewService {
             throw new NoSuchElementException("Customer not found");
         }
 
-        // Fetch user by userId from customer
         User user = userDao.getUserById(customer.getUserId());
         if (user == null) {
             throw new NoSuchElementException("User not found");

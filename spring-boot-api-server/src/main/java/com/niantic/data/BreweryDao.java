@@ -16,6 +16,5 @@ public interface BreweryDao {
 
     void updateBrewery(String id, Brewery brewery);
 
-
     void deleteBrewery(String id);
 }
