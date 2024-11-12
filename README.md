@@ -69,11 +69,9 @@ Create a `.env` file in the root of the project and provide the necessary enviro
 ### Step 4: Run the Application:
 
 Once the setup is complete, you can start the application using the following command:
-
-`npm start`
-
-
-
+- Start the backend: Run the `spring-boot-api-server`
+- Start the frontend: Run the `react-web-app` with the following command:
+`npm run dev`
 
 ## License
 
