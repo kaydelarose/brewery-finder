@@ -1,8 +1,7 @@
 
-# getTapped - Brewery Finder
+# Brewery Finder
 
-**getTapped** is your ultimate brewery finder. Whether you're a beer enthusiast or just starting your brewery journey, getTapped helps you discover the best breweries, craft beers, and experiences across the country.
-
+Brewery Finder is an interactive platform for discovering and managing breweries, featuring user authentication with role-based access for customers, brewers, and admins. Customers can browse detailed brewery listings, leave reviews, and track favorites in their profile. Brewers have tools to manage their listings, while admins enjoy full control over breweries, brewers, and users through a dedicated dashboard. Brewery Finder offers a personalized and organized experience for brewery enthusiasts and industry professionals alike.
 
 ## Features
 
