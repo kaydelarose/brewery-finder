@@ -66,7 +66,7 @@ Create a `.env` file in the root of the project and provide the necessary enviro
 
 `CREATE DATABASE brewery_app;`
 
-###\ Step 4: Run the Application:
+### Step 4: Run the Application:
 
 Once the setup is complete, you can start the application using the following command:
 
