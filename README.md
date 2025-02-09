@@ -73,7 +73,3 @@ Once the setup is complete, you can start the application using the following co
 - Start the frontend: Run the `react-web-app` with the following command:
 `npm run dev`
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
